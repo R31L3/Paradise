@@ -73,3 +73,33 @@
 	drink_name = "matadora beer"
 	drink_desc = "It smells strangely good despite its appearance taken out of the garbage."
 	taste_message ="Tastes urine with strawberry soda and medicinal alcohol"
+
+/datum/reagent/consumable/drink/coconutjuice
+	name = "Coconut Juice"
+	id = "coconutjuice"
+	description = "Refreshing and tropical"
+	color = "#E78108" // rgb: 231, 129, 8
+	drink_icon = "glass_orange"
+	drink_name = "Glass of Orange juice"
+	drink_desc = "Vitamins! Yay!"
+	taste_message = "coconut"
+
+/datum/reagent/consumable/drink/strawberryjuice
+	name = "Strawberry Juice"
+	id = "strawberryjuice"
+	description = "A sour-sweet strawberry juice"
+	color = "#d43131" // rgb: 134, 51, 51
+	drink_icon = "red"
+	drink_name = "Glass of berry juice"
+	drink_desc = "Strawberry juice."
+	taste_message = "strawberry"
+
+	/datum/reagent/consumable/drink/oxygenberryjuice
+	name = "Oxygenberry Juice"
+	id = "oxyberryjuice"
+	description = "Tastes like air conditioner"
+	color = "#d43131" // rgb: 134, 51, 5s1
+	drink_icon = "white"
+	drink_name = "Glass of oxygen berry juice"
+	drink_desc = "Oxygen berry juice."
+	taste_message = "air"
