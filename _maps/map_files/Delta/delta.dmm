@@ -8886,7 +8886,7 @@
 /obj/effect/decal/warning_stripes/north,
 /obj/machinery/mass_driver{
 	dir = 4;
-	id_tag = "toxinsdriver"
+	id_tag = "trash"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/disposal)
@@ -71578,7 +71578,7 @@
 /turf/simulated/floor/plasteel,
 /area/ai_monitored/storage/eva)
 "cwV" = (
-/obj/item/radio/beacon,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -74799,6 +74799,7 @@
 /area/ai_monitored/storage/eva)
 "cCG" = (
 /obj/effect/decal/warning_stripes/north,
+/obj/item/radio/beacon,
 /turf/simulated/floor/plasteel,
 /area/ai_monitored/storage/eva)
 "cCH" = (
@@ -89386,6 +89387,7 @@
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/dropper,
 /obj/effect/decal/warning_stripes/northwest,
+/obj/item/storage/belt,
 /turf/simulated/floor/plasteel,
 /area/toxins/lab)
 "ddG" = (
@@ -94049,6 +94051,7 @@
 	pixel_x = -6;
 	pixel_y = -2
 	},
+/obj/item/paper/monitorkey,
 /turf/simulated/floor/plasteel{
 	icon_state = "white"
 	},
@@ -99880,6 +99883,7 @@
 	pixel_y = 22
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
+/obj/item/storage/belt,
 /turf/simulated/floor/plasteel,
 /area/assembly/robotics)
 "dwr" = (
@@ -101884,6 +101888,7 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
+/obj/item/clothing/glasses/welding/superior,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/hor)
 "dzT" = (
@@ -101977,6 +101982,14 @@
 	},
 /obj/machinery/status_display{
 	pixel_y = -32
+	},
+/obj/item/storage/firstaid/machine{
+	step_x = 0;
+	step_y = 0
+	},
+/obj/item/storage/firstaid/machine{
+	step_x = 0;
+	step_y = 0
 	},
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -103397,7 +103410,7 @@
 "dCF" = (
 /obj/machinery/mass_driver{
 	dir = 8;
-	id_tag = "toxindriver"
+	id_tag = "toxinsdriver"
 	},
 /obj/effect/decal/warning_stripes/west,
 /turf/simulated/floor/plating/airless,
@@ -116376,88 +116389,11 @@
 	dir = 2
 	},
 /area/shuttle/pod_3)
-"ezg" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-whitebluecorner (WEST)";
-	icon_state = "whitebluecorner";
-	dir = 8
-	},
-/area/medical/genetics_cloning)
-"eSw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/psychiatrist,
+"eSp" = (
+/obj/structure/chair/comfy/lime,
 /turf/simulated/floor/wood,
 /area/medical/medbay)
-"fwD" = (
-/obj/item/twohanded/required/kirbyplants,
-/obj/structure/sign/poster/official/healthy{
-	pixel_y = 32
-	},
-/turf/simulated/floor/wood,
-/area/medical/medbay)
-"fFv" = (
-/obj/structure/bed/psych,
-/turf/simulated/floor/carpet,
-/area/medical/medbay)
-"goa" = (
-/turf/simulated/floor/plasteel{
-	icon_state = "neutralcorner";
-	dir = 2
-	},
-/area/medical/morgue)
-"his" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	level = 1
-	},
-/turf/simulated/floor/carpet,
-/area/medical/medbay)
-"ipm" = (
-/obj/machinery/door/airlock/medical{
-	name = "Psychologist's Office"
-	},
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "cmo"
-	},
-/area/medical/medbay)
-"iTt" = (
-/obj/machinery/computer/med_data/laptop,
-/obj/machinery/newscaster{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/obj/structure/table/wood,
-/obj/item/storage/briefcase,
-/turf/simulated/floor/carpet,
-/area/medical/medbay)
-"joI" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutralcorner";
-	dir = 2
-	},
-/area/medical/morgue)
-"kjp" = (
-/obj/effect/spawner/window/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	dir = 2;
-	icon_state = "open";
-	id_tag = "pyschoffice";
-	name = "Privacy Shutters";
-	opacity = 0
-	},
-/turf/simulated/floor/plating,
-/area/medical/medbay)
-"lGy" = (
+"gbR" = (
 /obj/machinery/door_control{
 	id = "pyschoffice";
 	name = "Privacy Shutters Control";
@@ -116466,7 +116402,27 @@
 	},
 /turf/simulated/floor/carpet,
 /area/medical/medbay)
-"mWQ" = (
+"gnd" = (
+/obj/item/twohanded/required/kirbyplants,
+/obj/structure/sign/poster/official/healthy{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood,
+/area/medical/medbay)
+"goK" = (
+/turf/simulated/floor/plasteel{
+	dir = 4;
+	icon_state = "blue"
+	},
+/area/medical/morgue)
+"gAY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/psychiatrist,
+/turf/simulated/floor/wood,
+/area/medical/medbay)
+"gVj" = (
 /obj/effect/landmark/start{
 	name = "Psychiatrist"
 	},
@@ -116480,21 +116436,27 @@
 	},
 /turf/simulated/floor/carpet,
 /area/medical/medbay)
-"oNZ" = (
-/obj/machinery/atmospherics/unary/vent_scrubber{
-	dir = 8;
-	on = 1
+"jUW" = (
+/obj/machinery/computer/med_data/laptop,
+/obj/machinery/newscaster{
+	pixel_x = 32;
+	pixel_y = 0
 	},
-/obj/machinery/light_switch{
-	pixel_y = -28
+/obj/structure/table/wood,
+/obj/item/storage/briefcase,
+/turf/simulated/floor/carpet,
+/area/medical/medbay)
+"kbG" = (
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 8
 	},
-/turf/simulated/floor/wood,
-/area/medical/medbay)
-"pkI" = (
-/obj/structure/chair/comfy/lime,
-/turf/simulated/floor/wood,
-/area/medical/medbay)
-"pul" = (
+/turf/simulated/floor/plasteel{
+	tag = "icon-whitebluecorner (WEST)";
+	icon_state = "whitebluecorner";
+	dir = 8
+	},
+/area/medical/genetics_cloning)
+"lHE" = (
 /obj/structure/morgue,
 /obj/effect/landmark{
 	name = "revenantspawn"
@@ -116504,7 +116466,34 @@
 	icon_state = "blue"
 	},
 /area/medical/morgue)
-"pEu" = (
+"lMw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	level = 1
+	},
+/turf/simulated/floor/carpet,
+/area/medical/medbay)
+"lTc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	level = 1
+	},
+/turf/simulated/floor/wood,
+/area/medical/medbay)
+"lTI" = (
+/obj/structure/bed/psych,
+/turf/simulated/floor/carpet,
+/area/medical/medbay)
+"oNR" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychologist's Office"
+	},
+/turf/simulated/floor/plasteel{
+	dir = 8;
+	icon_state = "cmo"
+	},
+/area/medical/medbay)
+"qnq" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9
 	},
@@ -116512,7 +116501,28 @@
 	icon_state = "white"
 	},
 /area/medical/genetics_cloning)
-"pTq" = (
+"rjr" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutralcorner";
+	dir = 2
+	},
+/area/medical/morgue)
+"udT" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/simulated/shuttle/floor4/vox,
+/area/shuttle/vox)
+"uDZ" = (
+/turf/simulated/floor/plasteel{
+	icon_state = "neutralcorner";
+	dir = 2
+	},
+/area/medical/morgue)
+"vMk" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/status_display{
 	pixel_x = 32;
@@ -116520,26 +116530,19 @@
 	},
 /turf/simulated/floor/carpet,
 /area/medical/medbay)
-"rAS" = (
-/turf/simulated/floor/plasteel{
-	dir = 4;
-	icon_state = "blue"
+"vOW" = (
+/obj/effect/spawner/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "open";
+	id_tag = "pyschoffice";
+	name = "Privacy Shutters";
+	opacity = 0
 	},
-/area/medical/morgue)
-"sMM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	level = 1
-	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/plating,
 /area/medical/medbay)
-"udT" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/turf/simulated/shuttle/floor4/vox,
-/area/shuttle/vox)
-"xtD" = (
+"xww" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8;
 	external_pressure_bound = 100;
@@ -116550,6 +116553,16 @@
 /obj/item/folder/white,
 /obj/item/paper_bin,
 /turf/simulated/floor/carpet,
+/area/medical/medbay)
+"ydL" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 8;
+	on = 1
+	},
+/obj/machinery/light_switch{
+	pixel_y = -28
+	},
+/turf/simulated/floor/wood,
 /area/medical/medbay)
 
 (1,1,1) = {"
@@ -157336,7 +157349,7 @@ drU
 dsQ
 duk
 dvt
-joI
+rjr
 dxI
 dyV
 dAd
@@ -158110,7 +158123,7 @@ dvw
 dvx
 dxL
 dyY
-pul
+lHE
 duk
 dBW
 dDj
@@ -158364,7 +158377,7 @@ drS
 dsS
 dun
 dvt
-goa
+uDZ
 dQd
 dyZ
 dXq
@@ -158624,7 +158637,7 @@ dvw
 dvx
 dxL
 dyY
-pul
+lHE
 duk
 dBU
 dDk
@@ -158868,7 +158881,7 @@ dfw
 dfx
 dgJ
 diB
-ezg
+kbG
 doF
 dml
 dnN
@@ -158878,7 +158891,7 @@ drY
 dsV
 duo
 dvt
-goa
+uDZ
 dxL
 dza
 dAh
@@ -159138,7 +159151,7 @@ dvw
 dvx
 dxL
 dyY
-pul
+lHE
 duk
 dBY
 dDh
@@ -159381,7 +159394,7 @@ dcn
 ddT
 dfz
 dgL
-pEu
+qnq
 dka
 dlj
 dmm
@@ -159649,7 +159662,7 @@ drX
 dsX
 dun
 dvz
-rAS
+goK
 dxO
 dzb
 dAj
@@ -164019,9 +164032,9 @@ cJg
 dSd
 dvK
 cKY
-kjp
-ipm
-kjp
+vOW
+oNR
+vOW
 cKY
 dbo
 dDt
@@ -164276,9 +164289,9 @@ dtl
 duz
 dvL
 cKY
-fwD
-sMM
-eSw
+gnd
+lTc
+gAY
 cKY
 dCk
 dDx
@@ -164533,9 +164546,9 @@ dtm
 duz
 dvM
 cKY
-pkI
-sMM
-oNZ
+eSp
+lTc
+ydL
 cKY
 dCl
 dDy
@@ -164790,8 +164803,8 @@ dtn
 duA
 dAq
 cKY
-fFv
-his
+lTI
+lMw
 dXw
 cKY
 cmt
@@ -165048,8 +165061,8 @@ duB
 dvO
 cKY
 dQu
-mWQ
-lGy
+gVj
+gbR
 cKY
 dCm
 dDz
@@ -165304,9 +165317,9 @@ dtp
 duC
 dvP
 cKY
-iTt
-xtD
-pTq
+jUW
+xww
+vMk
 cKY
 dCl
 dDA
